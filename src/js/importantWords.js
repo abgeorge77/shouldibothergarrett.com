@@ -23,6 +23,9 @@ const importantWords = {
   jira: {
     answer: 'I hate tickets, no.'
   },
+  pfb: {
+    answer: 'PFB will change the world, but no.'
+  },
   stage: {
     answer: 'Too busy to fix that STAGE problem because of the other STAGE problems, no.'
   }
