@@ -1,5 +1,7 @@
 import React from 'react';
+import Login from './Login';
 import answerQuestions from './js/answerQuestions';
+import { checkLogin } from './js/login';
 import './App.css';
 
 class App extends React.Component {
@@ -8,7 +10,12 @@ class App extends React.Component {
     this.state = {
       initialQuestion: '',
       initialAnswer: '',
+      loggedIn: false,
     };
+  }
+
+  checkLogin = () => {
+    this.setState({ loggedIn: checkLogin() });
   }
 
   setInitialQuestion = e => {
@@ -24,18 +31,23 @@ class App extends React.Component {
     return (
       <div className='app'>
         <h1>Should I Bother Garrett?</h1>
-        <div className='app__initial-question-area'>
-          <textarea
-            className='app__textarea'
-            placeholder="Please type your question for Garrett here..."
-            value={this.state.initialQuestion}
-            onChange={this.setInitialQuestion}
-          />
-          <button className='app__button' onClick={() => this.askInitialQuestion()}>
-            Should I?
-          </button>
-          <h2>{this.state.initialAnswer}</h2>
-        </div>
+        {
+          this.state.loggedIn ?
+            <div className='app__initial-question-area'>
+              <textarea
+                className='app__textarea'
+                placeholder="Please type your question for Garrett here..."
+                value={this.state.initialQuestion}
+                onChange={this.setInitialQuestion}
+              />
+              <button className='app__button' onClick={() => this.askInitialQuestion()}>
+                Should I?
+              </button>
+              <h2>{this.state.initialAnswer}</h2>
+            </div>
+          :
+            <Login checkLogin={this.checkLogin} />
+          }
       </div>
     );
   }

@@ -1,0 +1,26 @@
+.login {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.login__input {
+  outline: none;
+  font-size: 18px;
+  margin: 10px 10px;
+  width: 50%;
+}
+
+.login__button {
+  width: auto;
+  font-size: 18px;
+  padding: 10px 10px;
+  background-color: var(--primary);
+  cursor: pointer;
+  border-radius: 5px;
+  box-sizing: none;
+  border: none;
+  outline: none;
+}
