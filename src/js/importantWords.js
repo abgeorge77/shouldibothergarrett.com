@@ -1,7 +1,4 @@
 const importantWords = {
-  fantix: {
-    answer: 'Fantix is amazing'
-  },
   role: {
     answer: 'Garrett is the Product Manager. Ask the PM.'
   },
