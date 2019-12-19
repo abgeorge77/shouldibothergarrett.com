@@ -5,6 +5,9 @@ const importantWords = {
   abby: {
     answer: 'Abby who? No.'
   },
+  kittens: {
+    answer: 'Kittends are Garretts only true source of happiness. Bring him some.'
+  },
   access: {
     answer: 'I am not the Data Access Committee so, no.'
   },
