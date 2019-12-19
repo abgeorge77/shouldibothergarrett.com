@@ -9,7 +9,10 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v1
-
+    - name: Authenticate
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
     - name: Build and Deploy
       env:
          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
