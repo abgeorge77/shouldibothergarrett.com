@@ -9,3 +9,5 @@ jobs:
 
     - name: Build and Deploy
       run: npm ci && npm run deploy
+      with:
+        ACCESS_TOKEN: {{ $secrets.ACCESS_TOKEN }}
