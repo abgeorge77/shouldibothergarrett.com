@@ -11,4 +11,4 @@ jobs:
       uses: actions/checkout@v1
 
     - name: Build and Deploy
-      run: npm ci && npm run build && gh-pages --repo https://${{ secrets.GITHUB_TOKEN }}@github.com/abgeorge77/shouldibothergarrett.com.git -d build
+      run: npm ci && npm run deploy --repo https://${{ secrets.GITHUB_TOKEN }}@github.com/abgeorge77/shouldibothergarrett.com.git
