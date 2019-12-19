@@ -1,6 +1,6 @@
 const importantWords = {
   role: {
-    answer: 'Garrett is a Product Manager. Ask the PM.'
+    answer: 'Garrett is the Product Manager. Ask the PM.'
   },
   abby: {
     answer: 'Abby who? No.'
