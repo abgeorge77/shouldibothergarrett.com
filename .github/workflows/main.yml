@@ -15,5 +15,5 @@ jobs:
         git config --local user.name "GitHub Action"
     - name: Build and Deploy
       env:
-         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
       run: npm ci && npm run deploy
