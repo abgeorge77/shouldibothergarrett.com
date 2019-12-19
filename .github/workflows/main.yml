@@ -10,5 +10,14 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v1
 
-    - name: Build and Deploy
-      run: git config --global user.email "you@example.com" && git config --global user.name "Your Name" && npm ci && npm run deploy --repo https://${{ secrets.GHDEPLOY_TOKEN }}@github.com/abgeorge77/shouldibothergarrett.com.git
+    - name: Build
+      run: |
+        npm install
+        npm run-script build
+
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+      with:
+        GITHUB_TOKEN: ${{ secrets.GHDEPLOY_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: build
