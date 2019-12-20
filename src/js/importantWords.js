@@ -1,8 +1,16 @@
 const importantWords = {
+  garrett: {
+    answer: 'Garrett can currently be found curled up in a ball on his office floor. Please stand by for updates.'
+  },
+  singapore: {
+    answer: 'Garrett will return from Singapore on February 19th. Until then, bother someone elase. Actually, after then still bother someone else.'
+  },
   role: {
     answer: 'Garrett is the Product Manager. Ask the PM.'
   },
-  abby: {
+  interoperability: {
+    answer: 'Interoperability is overrated. send data with floppy disks. Remember floppy disks... wow, the memories.'
+  },  abby: {
     answer: 'Abby who? No.'
   },
   kittens: {
