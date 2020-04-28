@@ -3,7 +3,7 @@ const importantWords = {
     answer: 'Garrett can currently be found curled up in a ball on his office floor. Please stand by for updates.'
   },
   singapore: {
-    answer: 'Garrett returned from Singapore on February 12th without any signes of Cornovirus infection. You still should not bother him though.'
+    answer: 'Garrett returned from Singapore on February 12th without any signs of Coronavirus infection. You still should not bother him though.'
   },
   role: {
     answer: 'Garrett doesn\'t know his role either. Feel free to ask Bob.'
