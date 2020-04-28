@@ -15,8 +15,12 @@ const importantWords = {
     answer: 'Garrett doesn\'t know his role either. Feel free to ask Bob.'
   },
   interoperability: {
-    answer: 'Interoperability is overrated. send data with floppy disks. Remember floppy disks... wow, the memories.'
-  },  abby: {
+    answer: 'Interoperability is completely overrated. send data with floppy disks. Remember floppy disks... wow, the memories.'
+  },
+  Catalyst: {
+    answer: 'Too busy to fix that BioData Catalyst problem because of the other BioData Catalyst problems, no.'
+  },  
+  abby: {
     answer: 'Abby who?'
   },
   kittens: {
@@ -45,9 +49,6 @@ const importantWords = {
   },
   pfb: {
     answer: 'PFB will change the world, but no.'
-  },
-  Catalyst: {
-    answer: 'Too busy to fix that BioData Catalyst problem because of the other BioData Catalyst problems, no.'
   },
   AnVIL: {
     answer: 'What is AnVIL? Why is AnVIL? These are the important questions.'
