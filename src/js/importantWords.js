@@ -49,6 +49,9 @@ const importantWords = {
   Catalyst: {
     answer: 'Too busy to fix that BioData Catalyst problem because of the other BioData Catalyst problems, no.'
   },
+  AnVIL: {
+    answer: 'What is AnVIL? WHy is AnVIL? These are the important questions.'
+  },
   STAGE: {
     answer: 'Do you mean BioData Catalyst?'
   }
